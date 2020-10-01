@@ -37,11 +37,10 @@ public class ChessBoard extends JFrame {
     };
 
     void display()
-    {
+    {   
         setTitle("Chess board");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Container contentPane = getContentPane();
-
         //GridLayout to arrange components in a grid
         GridLayout gridLayout = new GridLayout(8, 8);
         contentPane.setLayout(gridLayout);
@@ -57,12 +56,14 @@ public class ChessBoard extends JFrame {
             contentPane.add(labels[i]);
         }
         setSize(600,600);
+        //Setting the frame to the center
         setLocationRelativeTo(null);
         setVisible(true);
     }
 
     //Main method
     //Displaying the board
+
     public static void main(String args[]) 
     {
         ChessBoard board = new ChessBoard();

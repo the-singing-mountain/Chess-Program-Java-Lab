@@ -21,5 +21,8 @@ public class ChessPieces extends JLabel {
             setBackground(bgLight);
         else
             setBackground(bgDark);
+        //Aligning the pieces to the center of the square
+        setHorizontalAlignment( SwingConstants.CENTER );
+
     }
 }
